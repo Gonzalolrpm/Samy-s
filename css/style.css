@@ -14,27 +14,33 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
+    height: 150px;
 }
+
 header a img {
-    height: 100px;
-    width: 100px;
-    padding: 30px;
+    height: 150px;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
 }
+
 .navegacion ul {
     list-style: none;
     text-align: center;
     display: flex;
+    margin-right: 20px;
 }
 .navegacion ul li {
-    margin: 10px 20px;
+    margin: 20px;
 }
 .navegacion ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
 }
 .navegacion ul li a:hover{
     background-color: black;
@@ -69,7 +75,7 @@ header a img {
     overflow: hidden;
 }
 
-.hero div h2{
+.hero div h1{
     text-align: right;
     font-size: 50px;
     font-style: italic;
@@ -167,8 +173,8 @@ header a img {
 
 .tarjetas-eventos{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .tarjetas-eventos div{
@@ -177,7 +183,7 @@ header a img {
     width: 250px;
     height: 400px;
     margin: 20px;
-    border-radius: 6px;
+    border-radius: 30px;
     background: #fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
     transition: all 400ms ease;
@@ -191,7 +197,7 @@ header a img {
 .tarjetas-eventos div img{
     width: 250px;
     height: 250px;
-
+    border-radius: 30px;
 }
 
 .tarjetas-eventos div h3{
@@ -222,7 +228,6 @@ footer{
 }
 
 .menu-ayuda {
-    font-size: 15px;
     margin: 10px;
 }
 
@@ -233,6 +238,7 @@ footer{
 }
 
 .menu-ayuda ul{
+    font-weight: bold;
     list-style: none;
     padding: 10px;
 }
@@ -343,7 +349,7 @@ footer{
 
 .nosotros img{
     height: 500px;
-    width: 500px;
+    width: 600px;
     padding: 25px;
 }
 
@@ -374,7 +380,7 @@ footer{
 
 .nuestra-historia img{
     height: 500px;
-    width: 500px;
+    width: 600px;
     padding: 25px;
 }
 
@@ -417,7 +423,7 @@ footer{
     display: inline-block;
     text-align: center;
     width: 250px;
-    height: 400px;
+    height: 250px;
     margin: 20px;
 }
 
@@ -473,12 +479,12 @@ footer{
     text-align: center;
   }
 
- .hero-eventos div form h2 {
+.hero-eventos div form h2 {
     color: #333;
     margin-bottom: 20px;
   }
 
-  .hero-eventos div form label {
+.hero-eventos div form label {
     display: block;
     margin-bottom: 8px;
     color: #555;
@@ -486,7 +492,7 @@ footer{
     text-align: left;
   }
 
-  .hero-eventos div form input {
+.hero-eventos div form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -496,7 +502,7 @@ footer{
     font-size: 14px;
   }
 
-  .hero-eventos div form button {
+.hero-eventos div form button {
     background-color: #0a0a0a;
     color: #fff;
     padding: 12px;
@@ -506,19 +512,19 @@ footer{
     font-size: 16px;
   }
 
-  .hero-eventos div form button:hover {
+.hero-eventos div form button:hover {
     background-color: #000000;
   }
 
-  /* Estilos para el checkbox */
-  label.checkbox {
+/* Estilos para el checkbox */
+label.checkbox {
     display: flex;
     align-items: center;
     text-align: left;
     margin-top: 15px;
   }
 
-  label.checkbox input {
+label.checkbox input {
     margin-right: 10px;
     text-align: right;
   }
@@ -551,10 +557,13 @@ footer{
 }
 
 @media screen and (max-width:880px){
-    
+    .navegacion ul {
+        display: block;
+        font-size: 15px;
+    }
      header {
-    background-color: rgba(255, 255, 255, 0.8);
-    position: static;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: static;
     }
     .tarjetas-eventos{
         grid-template-columns: repeat(2,1fr);
