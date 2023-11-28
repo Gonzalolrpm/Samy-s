@@ -27,11 +27,20 @@ header a img {
     margin: 10px;
 }
 
+.navegacion{
+    display: flex;
+}
+
+.navegacion label, input{
+    display: none;
+}
+
 .navegacion ul {
     list-style: none;
     text-align: center;
-    display: flex;
-    margin-right: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 20px;
 }
 .navegacion ul li {
     margin: 20px;
@@ -41,13 +50,22 @@ header a img {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
+
+.navegacion ul li a::after{
+    content: "";
+    display: block;
+    background: #000000;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+
 .navegacion ul li a:hover{
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    transition: all 400ms ease;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 /*!MAIN*/
@@ -175,6 +193,7 @@ header a img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tarjetas-eventos div{
@@ -517,7 +536,7 @@ footer{
   }
 
 /* Estilos para el checkbox */
-label.checkbox {
+label.checkbox{
     display: flex;
     align-items: center;
     text-align: left;
@@ -557,9 +576,32 @@ label.checkbox input {
 }
 
 @media screen and (max-width:880px){
-    .navegacion ul {
+    .navegacion label{
         display: block;
-        font-size: 15px;
+        cursor: pointer;
+    }
+    .navegacion label img{
+        margin-right: 25px;
+    }
+    .navegacion ul{
+        position: fixed;
+        top: 150px;
+        bottom: 0;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.8s ease-in-out;
+        z-index: 1;
+    }
+    .navegacion input:checked + ul{
+        clip-path: circle(100% at center);
+    }  
+    .navegacion ul li a{
+        color: #fff;
     }
      header {
         background-color: rgba(255, 255, 255, 0.8);
