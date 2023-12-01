@@ -31,7 +31,7 @@ header a img {
     display: flex;
 }
 
-.navegacion label, input{
+.navegacion label, .navegacion input{
     display: none;
 }
 
@@ -70,7 +70,7 @@ header a img {
 
 /*!MAIN*/
 .hero {
-    background-image: url(../img/granos-cafe\'.jpeg);
+    background-image: url(../img/granos-cafe.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -262,10 +262,10 @@ footer{
     padding: 10px;
 }
 
-.menu-ayuda a{
+/*.menu-ayuda a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-}
+}*/
 
 .redes-sociales img{
     padding: 10px;

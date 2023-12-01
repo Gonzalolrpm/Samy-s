@@ -1,0 +1,198 @@
+/*!RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  height: 150px; }
+  header a img {
+    height: 150px;
+    width: 200px;
+    padding: 5px;
+    margin: 10px; }
+  header .navegacion {
+    display: flex; }
+    header .navegacion label {
+      display: none; }
+    header .navegacion input {
+      display: none; }
+    header .navegacion ul {
+      list-style: none;
+      text-align: center;
+      display: grid;
+      grid-auto-flow: column;
+      margin-top: 20px; }
+      header .navegacion ul li {
+        margin: 20px; }
+        header .navegacion ul li a {
+          color: black;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 18px;
+          --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+          header .navegacion ul li a::after {
+            content: "";
+            display: block;
+            background: #000000;
+            width: 90%;
+            margin-top: 3px;
+            height: 3px;
+            clip-path: var(--clippy);
+            transition: clip-path .5s; }
+          header .navegacion ul li a:hover {
+            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+main .hero {
+  background-image: url(../img/granos-cafe.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: end; }
+  main .hero div {
+    color: white;
+    width: 60%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden; }
+    main .hero div h1 {
+      text-align: right;
+      font-size: 50px;
+      font-style: italic; }
+    main .hero div p {
+      text-align: right;
+      font-size: 20px;
+      font-style: italic; }
+
+main .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .menu img {
+    height: 400px;
+    width: 500px;
+    padding: 25px; }
+  main .menu div {
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+    font-size: 20px;
+    text-align: center; }
+    main .menu div h2 {
+      padding: 10px; }
+    main .menu div p {
+      margin-bottom: 20px; }
+    main .menu div button a {
+      text-decoration: none;
+      color: white; }
+
+main .cafe {
+  border-top: 1px solid #999;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .cafe img {
+    height: 500px;
+    width: 500px;
+    padding: 25px; }
+  main .cafe div {
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+    font-size: 20px;
+    text-align: center; }
+    main .cafe div h2 {
+      padding: 10px; }
+    main .cafe div p {
+      margin-bottom: 20px; }
+    main .cafe div button a {
+      text-decoration: none;
+      color: white; }
+
+main .eventos h2 {
+  color: black;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  text-align: center;
+  padding: 10px; }
+
+main .eventos p {
+  text-align: center;
+  margin: 20px;
+  font-size: 20px; }
+
+main .tarjetas-eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .tarjetas-eventos div {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 400ms ease; }
+    main .tarjetas-eventos div:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+      transform: translateY(-3%); }
+    main .tarjetas-eventos div img {
+      width: 250px;
+      height: 250px;
+      border-radius: 30px; }
+    main .tarjetas-eventos div h3 {
+      font-size: 18px;
+      color: black;
+      margin-bottom: 15px;
+      padding: 15px; }
+    main .tarjetas-eventos div button a {
+      text-decoration: none;
+      padding: 5px;
+      color: white; }
+
+footer {
+  background-image: url(../img/ilustracion-cafe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer .menu-ayuda {
+    margin: 10px; }
+    footer .menu-ayuda h3 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold; }
+    footer .menu-ayuda ul {
+      font-weight: bold;
+      list-style: none;
+      padding: 10px; }
+      footer .menu-ayuda ul .redes-sociales a img {
+        padding: 10px;
+        height: 40px;
+        width: 40px; }

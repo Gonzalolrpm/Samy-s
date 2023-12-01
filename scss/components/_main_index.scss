@@ -1,0 +1,149 @@
+main{
+    .hero{
+        background-image: url(../img/granos-cafe.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height:500px ;
+        padding: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: end;
+        div{
+            color: rgb(255, 255, 255);
+            width: 60%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            border-radius: 5px;
+            overflow: hidden;
+            h1{
+                text-align: right;
+                font-size: 50px;
+                font-style: italic;
+            }
+            p{
+                text-align: right;
+                font-size: 20px;
+                font-style: italic;
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        img{
+            height: 400px;
+            width: 500px;
+            padding: 25px;
+        }
+        div{
+            width: 50%;
+            padding: 20px;
+            text-align: right;
+            font-size: 20px;
+            text-align: center;
+            h2{
+                padding: 10px;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            button{
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    .cafe{
+        border-top: 1px solid #999;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        img{
+            height: 500px;
+            width: 500px;
+            padding: 25px;
+        }
+        div{
+            width: 50%;
+            padding: 20px;
+            text-align: right;
+            font-size: 20px;
+            text-align: center;
+            h2{
+                padding: 10px;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            button{
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    .eventos{
+        h2{
+            color: rgb(0, 0, 0);
+            border-bottom: 1px solid #999;
+            border-top: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+        }
+        p{
+            text-align: center;
+            margin: 20px;
+            font-size: 20px;
+        }
+    }
+    .tarjetas-eventos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            display: inline-block;
+            text-align: center;
+            width: 250px;
+            height: 400px;
+            margin: 20px;
+            border-radius: 30px;
+            background: #fff;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+            transition: all 400ms ease;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+                transform: translateY(-3%);
+            }
+            img{
+                width: 250px;
+                height: 250px;
+                border-radius: 30px;
+            }
+            h3{
+                font-size: 18px;
+                color: black;
+                margin-bottom: 15px;
+                padding: 15px;
+            }
+            button{
+                a{
+                    text-decoration: none;
+                    padding: 5px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
