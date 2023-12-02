@@ -534,19 +534,7 @@ footer{
 .hero-eventos div form button:hover {
     background-color: #000000;
   }
-
-/* Estilos para el checkbox */
-label.checkbox{
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin-top: 15px;
-  }
-
-label.checkbox input {
-    margin-right: 10px;
-    text-align: right;
-  }
+  
 /*!MEDIAQUERY*/
 
 @media screen and (max-width:1160px){
