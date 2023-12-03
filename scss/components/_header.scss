@@ -1,10 +1,8 @@
 header{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $color-primario;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center, none);
     z-index: 1;
     height: 150px;
     a{
@@ -40,7 +38,7 @@ header{
                     &::after{
                         content: "";
                         display: block;
-                        background: #000000;
+                        background: $color-secundario;
                         width: 90%;
                         margin-top: 3px;
                         height: 3px;

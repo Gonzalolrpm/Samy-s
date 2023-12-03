@@ -47,7 +47,7 @@ header{
         }
         ul{
             position: fixed;
-            top: 150px;
+            top: 130px;
             bottom: 0;
             background-color: black;
             width: 100%;
@@ -57,7 +57,7 @@ header{
             flex-direction: column;
             clip-path: circle(0 at center);
             transition: clip-path 0.8s ease-in-out;
-             z-index: 1;
+            z-index: 1;
             li{
                  a{
                     color: #fff;
@@ -77,10 +77,10 @@ main{
     .hero{
         div{
             h1{
-                font-size: 25px;
+                font-size: 30px;
             }
             p{
-                font-size: 15px;
+                font-size: 20px;
             }
         }
     }

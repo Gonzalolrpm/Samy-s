@@ -8,10 +8,7 @@ main{
         background-repeat: no-repeat;
         height:500px ;
         padding: 50px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: end;
+        @include flex(flex, space-around, end, column);
         div{
             color: rgb(255, 255, 255);
             width: 60%;
@@ -33,9 +30,7 @@ main{
         }
     }
     .menu{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, space-around, center, none);
         flex-wrap: wrap;
         img{
             height: 400px;
@@ -64,10 +59,7 @@ main{
     }
     .cafe{
         border-top: 1px solid #999;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, space-around, center, row-reverse);
         flex-wrap: wrap;
         img{
             height: 500px;
@@ -109,9 +101,7 @@ main{
         }
     }
     .tarjetas-eventos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center, none);
         flex-wrap: wrap;
         div{
             display: inline-block;
@@ -158,9 +148,7 @@ main{
         background-repeat: no-repeat;
         height:300px ;
         padding: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center, none);
         overflow: hidden;
         div{
             h2{
@@ -214,10 +202,7 @@ main{
     .nosotros{
         border-bottom: 1px solid #999;
         border-top: 1px solid #999;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, space-around, center, row-reverse);
         flex-wrap: wrap;
         img{
             height: 500px;
@@ -241,9 +226,7 @@ main{
     .nuestra-historia{
         border-bottom: 1px solid #999;
         border-top: 1px solid #999;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, space-around, center, none);
         flex-wrap: wrap;
         img{
             height: 500px;
@@ -274,10 +257,7 @@ main{
         background-position: center;
         background-attachment: fixed;
         height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(flex, center, center, column);
         div{
             h2{
                 font-size: 50px;
@@ -291,8 +271,7 @@ main{
         }
     }
     .container-cafe{
-        display: flex;
-        justify-content: center;
+        @include flex(flex, center, none, none);
         flex-wrap: wrap;
         padding: 60px;
         border-bottom: 1px solid #999;
@@ -327,9 +306,7 @@ main{
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, space-around, center, none);
         flex-wrap: wrap;
         div{
             width: 500px;
@@ -381,7 +358,7 @@ main{
                     cursor: pointer;
                     font-size: 16px;
                     &:hover{
-                        background-color: #000000; 
+                        background-color: $color-secundario; 
                     }
                 }
             }
